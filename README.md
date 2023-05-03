@@ -2,9 +2,9 @@
 
 Dron capaz de volar sobre campos de cultivo para controlar al ganado, observar la calidad del terreno y activar zonas de riego.
 
-## PROJECT SPRINT #2
-**DATE**: 14 April 2023
+<img src="" />
 
+## Team
 **VÍCTOR HERNÁNDEZ GARRIDO 1597028**
 **MARC SERRA RUIZ 1603957**
 **JOEL SÁNCHEZ DE MURGA PACHECO 1598948**
@@ -43,8 +43,3 @@ This is the list of the proposed components:
 - Emisor RF 434Mhz - 4800bps
 - ESP32 STEAMakers
 
-## Scheme
-
-The scheme is not available at this moment.
-
-## Extra components
