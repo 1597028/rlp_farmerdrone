@@ -2,7 +2,7 @@
 
 Dron capaz de volar sobre campos de cultivo para controlar al ganado, observar la calidad del terreno y activar zonas de riego.
 
-<img src="" />
+<img src="drone.png"/>
 
 ## Team
 **VÍCTOR HERNÁNDEZ GARRIDO 1597028**
