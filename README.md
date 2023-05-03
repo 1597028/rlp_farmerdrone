@@ -138,9 +138,9 @@ The following parts have been designed using TinkerCad software, the files can b
 
 | | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119190607-df011300-ba7d-11eb-8406-37dc23d967e1.png">  Robotic arm base |  <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119190690-fb04b480-ba7d-11eb-93e5-c55214c344cc.png"> Arm 1|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119190735-07890d00-ba7e-11eb-9181-d9d77036962d.png"> Arm 2 | <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119190797-18398300-ba7e-11eb-8560-a555de1d636f.png"> Wrist |
-|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119190845-29828f80-ba7e-11eb-835f-4a08f5819716.png">  Robot base |  <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119190892-38694200-ba7e-11eb-9afd-76f2c7ae8886.png"> Wheels |<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119191030-6d759480-ba7e-11eb-8fc5-d7f1fc7cca7e.jpg"> Box | <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119191082-7c5c4700-ba7e-11eb-8829-93172e3e1ad4.jpg"> Gripper finger |
-|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119191287-b594b700-ba7e-11eb-9b69-91bcc0fa4724.jpg"> Wheel support |  <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119191354-ce04d180-ba7e-11eb-81c8-5766e4b661d9.jpg"> Camera support|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119191403-db21c080-ba7e-11eb-9687-b08ea0b842e0.jpg"> Proximity sensor|
+|<img width="800" alt="Hélice" src="3d-pieces/helices.png">  Hélices |  <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Arm 1|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Arm 2 | <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Wrist |
+|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=">  Robot base |  <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Wheels |<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Box | <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Gripper finger |
+|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Wheel support |  <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Camera support|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Proximity sensor|
 
 # Amazing contributions <a name="10"></a>
 This project is designed to facilitate and expedite the arduous task of harvesting. In this country, the agricultural sector is still a fundamental part. In places like Andalusia or Extremadura, most of the population is dedicated to it. In Almeria, for example, a city in Andalusia, is known for the large extensions of greenhouses, where apart from planting other kind of fruits and vegetables, tomatoes are the most frequent. The reason why we did this project is that we want to help farmers to facilitate and avoid the physical work involved, as we know firsthand that it is a very difficult job.
@@ -152,10 +152,10 @@ Matt-Omato only needs the human hand to start up. Once it is turned on, it will 
 With the computer vision part, we want to provide our robot with good efficiency, as working with point clouds and RGB-D camera can make the acquisition and detection of tomatoes easier, faster and more efficient.
 
 # Video <a name="11"></a>
-[![Vídeo Matt-Omato](https://user-images.githubusercontent.com/65310531/119540216-7cfe2180-bd8d-11eb-8d28-1b43a83b909f.png)](https://www.youtube.com/watch?v=67QP2RPM768)
+[![Vídeo Matt-Omato](drone.png)](https://www.youtube.com/watch?v=YRAI7-MICbY&ab_channel=CoppeliaRobotics)
 
 # Authors <a name="12"></a>
-- Alejandro Miranda Herrero - 1527892 - <a href="https://github.com/AlejandroMirandaHerrero">Github</a>
-- Martí Arnaus Comellas - 1530039 - <a href="https://github.com/marti1900">Github</a>
-- Youssef Assbaghi Asbahi - 1493477 - <a href="https://github.com/Youssef-Assbaghi">Github</a>
-- Pablo Mora Claros - 1493293 - <a href="https://github.com/pabloomc99">Github</a>
+- Víctor Hernández Garrido - 1597028 - <a href="https://github.com/1597028">Github</a>
+- Marc Serra Ruíz - 1603957 - <a href="https://github.com/1603957">Github</a>
+- Adrián Nieto Núñez - 1569312 - <a href="https://github.com/adrian-nieto">Github</a>
+- Joel Sánchez de Murga Pacheco - 1598948 - <a href="https://github.com/1598948">Github</a>
