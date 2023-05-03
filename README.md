@@ -112,9 +112,8 @@ Matt-Omato starts his movement in a straight line thanks to the rails and cannot
 
 # Simulation <a name="7"></a>
 In order to test Matt-Omato it has been necessary to use the CoppeliaSim software where we have the whole robot recreated in real size with all the hardware components and all the software components (Python). We have a total of 10 scenes where the difficulty increases according to the number of tomato plants, the number of tomatoes in each tomato plant, the size of the tomatoes and the color of the tomatoes.
-| | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119239761-74b6a400-bb4b-11eb-82d9-56d343d569ad.gif">  Simple scene |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119310553-2ea73080-bc70-11eb-9d92-2285698fcf6a.gif"> Intermediate scene|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/65310531/119310578-36ff6b80-bc70-11eb-956c-9d987a9432ff.gif"> Difficult scene|
+
+<img width="1604" alt="" src="https://www.youtube.com/watch?v=qB0N4pwrjE8&ab_channel=DJIAgriculture">
 
 # Testing and results <a name="8"></a>
 To verify how good the proposed solution is, each of the created scenes has been run several times to check the accuracy of the XYZ coordinates of the tomatoes calculated by the computer vision algorithm and the coordinates of the tomatoes in CoppeliaSim. The results can be seen in the following table:
