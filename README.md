@@ -126,11 +126,11 @@ To verify how good the proposed solution is, each of the created scenes has been
 # Created 3D Pieces <a name="9"></a>
 The following parts have been designed using TinkerCad software, the files can be found in the "models/drone_parts" folder.
 - Body
-<img src="resources/" alt="drone body"/>
+<img src="resources/body.jpg" width="400px" alt="drone body"/>
 - Propellers
-<img src="resources/" alt="drone proppelers"/>
+<img src="resources/helix.jpg" width="400px" alt="drone proppelers"/>
 - Motor
-<img src="resources/"alt="drone motor" />
+<img src="resources/motor.jpg" width="400px" alt="drone motor" />
 
 # Amazing contributions <a name="10"></a>
 We think that our project is unique for several reasons, among them we have the following points:
