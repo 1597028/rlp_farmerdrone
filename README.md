@@ -40,15 +40,15 @@ For running each sample code:
 
 # Description <a name="2"></a>
 
-In this project, a drone equipped with a high-resolution camera installed at the bottom will be used. The drone will fly over the agricultural fields and capture images of the ground from different heights and angles. These images will be processed using computer vision techniques to detect and analyze soil dryness levels.
+The main objective of Farmer Drone is to maintain exhaustive control over farmland and pasture through the use of a drone that will be able to fly at low altitude to control livestock and observe the quality of the land.
 
-Image processing will be carried out using computer vision algorithms, which will make it possible to identify patterns and characteristics associated with soil dryness. Techniques such as image segmentation and texture analysis will be used to determine areas with abnormal dryness levels.
+As for livestock monitoring, the drone will be equipped with counting and location technology, allowing farmers to have a complete and accurate view of the number and location of their animals at all times. This will help farmers ensure the health and safety of their livestock, reduce the risk of theft and improve the overall performance of their business.
 
-In addition to detecting soil dryness levels, the drone will also be capable of effective livestock control in agricultural fields. Using computer vision, the drone will be able to identify and track cattle, providing real-time information on their location and behavior.
+In addition to monitoring livestock, the drone will also be equipped with sensors to detect soil moisture. This information will allow farmers to activate irrigated areas efficiently, which will allow them to reduce water use and improve the quality of the land.
 
-The system will include an intuitive user interface that will allow farmers and ranchers to view monitoring results in real time. Automatic alerts can also be established to report critical dryness levels or unusual cattle behavior.
+The drone's design will also allow for easy integration with existing farm management systems, allowing for easy data collection and analysis. Armed with this information, farmers will be able to make more informed decisions about their crops and increase the efficiency of their operations.
 
-With this system, it is expected to optimize irrigation management in agricultural fields, guarantee efficient use of water resources and improve livestock control in cultivation areas, which will result in increased productivity and better sustainability in the agricultural and livestock industry.
+In summary, the robotics project we are developing aims to improve the efficiency of agriculture and reduce environmental impact through the use of advanced technology. We hope this specialized drone will help farmers improve the health of their livestock, the quality of their land, and increase the overall yield of their crops.
 
 # Hardware Component List <a name="3"></a>
 This is the hardware scheme made for our drone. 
