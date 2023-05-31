@@ -1,5 +1,5 @@
 # Farmer Drone
-Dron capaz de volar sobre campos de cultivo para controlar al ganado, observar la calidad del terreno y activar zonas de riego.
+Drone capable of flying over crop fields to control livestock, observe the quality of the land and activate irrigation areas.
 
 # Table of Contents
 <img src="drone.png"/>
@@ -30,33 +30,29 @@ The main objective of Farmer Drone is to maintain an exhaustive control over far
 For running each sample code:
 
 - Python 3.7
-
 - numpy
-
 - math
-
 - matplotlib
 - cv2
-- <a href="http://www.open3d.org/docs/release/getting_started.html">open3d</a>
-- <a href="https://leomariga.github.io/pyRANSAC-3D/">pyRANSAC3D</a>
+- sympy
+- time
+
 
 # Description <a name="2"></a>
-FarmerDrone is a robot capable of harvesting tomatoes autonomously through different growing lines and deposit them in a box attached to the base.
 
-The main mechanical component is a anthropomorphic 5-axis robotic arm plus clamp which allows you a sufficient range to harvest tomatoes you have on the growing lines on each side.  At the end of the arm it has a special 3-finger gripper which allows us to take the tomatoes more easily and correctly.
+In this project, a drone equipped with a high-resolution camera installed at the bottom will be used. The drone will fly over the agricultural fields and capture images of the ground from different heights and angles. These images will be processed using computer vision techniques to detect and analyze soil dryness levels.
 
- Matt-Omato's movement through the tomato plants is linear. Moves back and forth through rails so you don't lose straight line  and thus avoid possible shock with the tomateras. Matt-Omato has two proximity sensors which allow him to change direction if he detects any object.
- 
- The other most important part of Matt-Omato is the RGB-D camera that has built-in. Thanks to it it is able to detect the tomatoes and obtain the coordinates of them.  This will also allow us to define a threshold that types of tomatoes we agree to harvest and which we do not.
- 
-  Generally speaking Matt-Omato is able to:
-  -  Detect tomato coordinates using a 3D point cloud.
-  -  Calculate the angles of rotation of the arm motors in order to move the manipulator through inverse kinematics.
-  -   Move autonomously through the tomato plants thanks to the rails and proximity sensors
+Image processing will be carried out using computer vision algorithms, which will make it possible to identify patterns and characteristics associated with soil dryness. Techniques such as image segmentation and texture analysis will be used to determine areas with abnormal dryness levels.
 
-# Hardware Scheme <a name="3"></a>
-This is the hardware scheme made for Matt-Omato. In it we can find the existence of a NEMA engine for the base of the robotic arm which allows us to move 360 degrees.  You can also see a total of 6 servo motors which 5 of them are for the arm and one for RGB-D camera support  which gives us color and depth information about the captured scene. We can also find 2 DC motors for the movement of the wheels. And finally the two proximity sensors to be able to detect the greenhouse walls for example.
-<img src="https://user-images.githubusercontent.com/65310531/119172049-b4a35b80-ba65-11eb-9e4f-c1f1f7883818.png" align="center" width="700" alt="hardware_scheme"/>
+In addition to detecting soil dryness levels, the drone will also be capable of effective livestock control in agricultural fields. Using computer vision, the drone will be able to identify and track cattle, providing real-time information on their location and behavior.
+
+The system will include an intuitive user interface that will allow farmers and ranchers to view monitoring results in real time. Automatic alerts can also be established to report critical dryness levels or unusual cattle behavior.
+
+With this system, it is expected to optimize irrigation management in agricultural fields, guarantee efficient use of water resources and improve livestock control in cultivation areas, which will result in increased productivity and better sustainability in the agricultural and livestock industry.
+
+# Hardware Component List <a name="3"></a>
+This is the hardware scheme made for our drone. 
+<img src="hardware-farmerdrone.png" alt="Hardware table"/>
 
 # Software Architecture <a name="4"></a>
 In order to develop the software part of Matt-Omato, we have divided the development into two parts. 
