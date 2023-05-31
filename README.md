@@ -142,13 +142,13 @@ The following parts have been designed using TinkerCad software, the files can b
 |<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Wheel support |  <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Camera support|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Proximity sensor|
 
 # Amazing contributions <a name="10"></a>
-This project is designed to facilitate and expedite the arduous task of harvesting. In this country, the agricultural sector is still a fundamental part. In places like Andalusia or Extremadura, most of the population is dedicated to it. In Almeria, for example, a city in Andalusia, is known for the large extensions of greenhouses, where apart from planting other kind of fruits and vegetables, tomatoes are the most frequent. The reason why we did this project is that we want to help farmers to facilitate and avoid the physical work involved, as we know firsthand that it is a very difficult job.
-
-Our project has an interesting point from the harvesting point of view, as we pick the tomatoes with a 3 finger-gripper to ensure the right grip. With a rotation of the gripper, we get the tomato to pluck smoothly and without jerky gestures.
-
-Matt-Omato only needs the human hand to start up. Once it is turned on, it will autonomously do all the work of harvesting tomatoes in a line of tomato plants thanks to the built-in rails that make it not deviate from its straight trajectory.
-
-With the computer vision part, we want to provide our robot with good efficiency, as working with point clouds and RGB-D camera can make the acquisition and detection of tomatoes easier, faster and more efficient.
+We think that our project is unique for several reasons, among them we have the following points:
+  
+1. Livestock Tracking and Counting Technology: The use of advanced technology to monitor livestock in crop fields is relatively new.
+2. Integration with farm management systems: Designing the drone to easily integrate with existing farm management systems can be very useful for farmers.
+3. Soil Moisture Sensor: The drone's ability to detect soil moisture would help farmers optimize their water use and increase the efficiency of their operations.
+4. Adaptability and customization: The construction of an adaptable and customizable drone according to the specific needs of farmers and different types of crops.
+5. Reduced environmental impact: Drone designed to reduce environmental impact compared to other traditional monitoring and irrigation methods, which can be valuable to farmers and the environment.
 
 # Video <a name="11"></a>
 [![Vídeo Matt-Omato](drone.png)](https://www.youtube.com/watch?v=YRAI7-MICbY&ab_channel=CoppeliaRobotics)
