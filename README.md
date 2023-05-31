@@ -53,7 +53,7 @@ In summary, the robotics project we are developing aims to improve the efficienc
 # Hardware Component List <a name="3"></a>
 This is the hardware scheme made for our drone. 
 </br>
-<img src="resource/hardware-farmerdrone.png" width="500" alt="Hardware table"/>
+<img src="resources/hardware-farmerdrone.png" width="500" alt="Hardware table"/>
 
 # Software Architecture <a name="4"></a>
 In order to develop the software part of Matt-Omato, we have divided the development into two parts. 
@@ -63,7 +63,7 @@ In the diagram below you can see there are 4 main modules:
 - Ground Status Module: The state of the farmland will be detected and controlled by means of an infrared camera and computer vision, this will send the results of the processing to the modules that need them for their operation.
 - Animal Monitoring Module: This module will be in charge of monitoring and controlling the animals within the territory of a farm, that is, it will control that they remain within the limits of the territory and state of the animal through its heat.
 - Nutrients/Pesticides Module: The module will take care of dropping nutrients or pesticides depending on the use case needed. If a poor state of the land is detected or with certain deficiencies in it, nutrients will be applied to favor the growth of crops in specific areas. Likewise, there will be an option to launch pesticides on the crops that are considered convenient.
-<img src="resource/software-farmerdrone.png" width="600" alt="software_scheme"/>
+<img src="resources/software-farmerdrone.png" width="600" alt="software_scheme"/>
 
 ## Animal and Ground Status Detection <a name="5"></a>
  <img src="https://user-images.githubusercontent.com/65310531/119176651-a9532e80-ba6b-11eb-9cd7-0cd376f4e653.png" align="right" width="320" alt="cloud"/>
