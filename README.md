@@ -123,15 +123,14 @@ To verify how good the proposed solution is, each of the created scenes has been
 |      9 |  36  |   4  |     1,32336 |       0,03676 |     0,06590490678 |
 |     10 |  16  |   4  |      0,5264 |        0,0329 |      0,0544548951 |
 
-# 3D Pieces <a name="9"></a>
-The following parts have been designed using TinkerCad software, the files can be found in the "Piezas 3D" folder.
-
-
-| | | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="800" alt="Hélice" src="3d-pieces/helices.png">  Hélices |  <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Arm 1|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Arm 2 | <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Wrist |
-|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=">  Robot base |  <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Wheels |<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Box | <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Gripper finger |
-|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Wheel support |  <img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Camera support|<img width="800" alt="screen shot 2017-08-07 at 12 18 15 pm" src=""> Proximity sensor|
+# Created 3D Pieces <a name="9"></a>
+The following parts have been designed using TinkerCad software, the files can be found in the "models/drone_parts" folder.
+- Body
+<img src="resources/" alt="drone body"/>
+- Propellers
+<img src="resources/" alt="drone proppelers"/>
+- Motor
+<img src="resources/"alt="drone motor" />
 
 # Amazing contributions <a name="10"></a>
 We think that our project is unique for several reasons, among them we have the following points:
