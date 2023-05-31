@@ -102,6 +102,7 @@ Matt-Omato starts his movement in a straight line thanks to the rails and cannot
       - Moves in the indicated direction for one second
       - Back to point 1
 
+
 # Simulation <a name="7"></a>
 In order to test Matt-Omato it has been necessary to use the CoppeliaSim software where we have the whole robot recreated in real size with all the hardware components and all the software components (Python). We have a total of 10 scenes where the difficulty increases according to the number of tomato plants, the number of tomatoes in each tomato plant, the size of the tomatoes and the color of the tomatoes.
 
