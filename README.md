@@ -52,14 +52,14 @@ In summary, the robotics project we are developing aims to improve the efficienc
 
 # Hardware Component List <a name="3"></a>
 This is the hardware scheme made for our drone. 
-<img src="hardware-farmerdrone.png" alt="Hardware table"/>
+<img src="hardware-farmerdrone.png" align="center" width="500" alt="Hardware table"/>
 
 # Software Architecture <a name="4"></a>
 In order to develop the software part of Matt-Omato, we have divided the development into two parts. 
 
 In the diagram below you can see Matt-Omato's internal process in relation to the software. In it, there are two differentiated parts. On the one hand we have everything related to the computer vision that is going to be able to detect the tomatoes and get the coordinates of them. And on the other hand we have the calculation of the position of the robotic arm thanks to the inverse kinematics.
 
-<img src="https://user-images.githubusercontent.com/65310531/119315245-f145a180-bc75-11eb-8d6a-ff82f964df6d.png" align="center" width="500" alt="software_scheme"/>
+<img src="software-farmerdrone.png" align="center" width="500" alt="software_scheme"/>
 
 ## 3D Point Cloud tomato detection <a name="5"></a>
  <img src="https://user-images.githubusercontent.com/65310531/119176651-a9532e80-ba6b-11eb-9cd7-0cd376f4e653.png" align="right" width="320" alt="cloud"/>
