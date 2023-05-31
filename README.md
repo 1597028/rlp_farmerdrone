@@ -58,9 +58,12 @@ This is the hardware scheme made for our drone.
 # Software Architecture <a name="4"></a>
 In order to develop the software part of Matt-Omato, we have divided the development into two parts. 
 
-In the diagram below you can see Matt-Omato's internal process in relation to the software. In it, there are two differentiated parts. On the one hand we have everything related to the computer vision that is going to be able to detect the tomatoes and get the coordinates of them. And on the other hand we have the calculation of the position of the robotic arm thanks to the inverse kinematics.
-
-<img src="software-farmerdrone.png" width="500" alt="software_scheme"/>
+In the diagram below you can see there are 4 main modules:
+- Irrigation Module: Using the information received from the module that processes the information on the state of the land, it will decide whether to activate the irrigation, in case the land is not wet enough, or deactivate them in the event that the land is receiving too much water. The order will be sent to the risks by means of a signal (a priori by radio).
+- Ground Status Module: The state of the farmland will be detected and controlled by means of an infrared camera and computer vision, this will send the results of the processing to the modules that need them for their operation.
+- Animal Monitoring Module: This module will be in charge of monitoring and controlling the animals within the territory of a farm, that is, it will control that they remain within the limits of the territory and state of the animal through its heat.
+- Nutrients/Pesticides Module: The module will take care of dropping nutrients or pesticides depending on the use case needed. If a poor state of the land is detected or with certain deficiencies in it, nutrients will be applied to favor the growth of crops in specific areas. Likewise, there will be an option to launch pesticides on the crops that are considered convenient.
+<img src="software-farmerdrone.png" width="600" alt="software_scheme"/>
 
 ## 3D Point Cloud tomato detection <a name="5"></a>
  <img src="https://user-images.githubusercontent.com/65310531/119176651-a9532e80-ba6b-11eb-9cd7-0cd376f4e653.png" align="right" width="320" alt="cloud"/>
