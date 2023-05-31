@@ -2,7 +2,7 @@
 Drone capable of flying over crop fields to control livestock, observe the quality of the land and activate irrigation areas.
 
 # Table of Contents
-<img src="resources/scene.jpg"/>
+<img src="resources/scene.jpeg"/>
 
 * [What is this?](#1)
    * [Requeriments](#R)
