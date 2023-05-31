@@ -52,6 +52,7 @@ In summary, the robotics project we are developing aims to improve the efficienc
 
 # Hardware Component List <a name="3"></a>
 This is the hardware scheme made for our drone. 
+</br>
 <img src="hardware-farmerdrone.png" width="500" alt="Hardware table"/>
 
 # Software Architecture <a name="4"></a>
