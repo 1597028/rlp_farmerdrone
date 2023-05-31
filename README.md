@@ -65,7 +65,7 @@ In the diagram below you can see there are 4 main modules:
 - Nutrients/Pesticides Module: The module will take care of dropping nutrients or pesticides depending on the use case needed. If a poor state of the land is detected or with certain deficiencies in it, nutrients will be applied to favor the growth of crops in specific areas. Likewise, there will be an option to launch pesticides on the crops that are considered convenient.
 <img src="software-farmerdrone.png" width="600" alt="software_scheme"/>
 
-## 3D Point Cloud tomato detection <a name="5"></a>
+## Animal and Ground Status Detection <a name="5"></a>
  <img src="https://user-images.githubusercontent.com/65310531/119176651-a9532e80-ba6b-11eb-9cd7-0cd376f4e653.png" align="right" width="320" alt="cloud"/>
  In order to provide Matt-Omato with computer vision, it has been necessary to integrate an RGB-D camera that provides depth and color information. Thanks to this we are able to create the 3D point cloud of the scene.
  
@@ -85,15 +85,7 @@ In order to detect all tomatoes in the scene individually, it is necessary to de
 
 Finally, in order to obtain the coordinates of the tomatoes, we have used a RANSAC algorithm to adjust the points of each cluster to the sphere shape defined by RANSAC. Using the "pyRansac3D" library we are able to obtain the centers of these spheres and therefore the centers of the tomatoes.
 
-
-## Inverse Kinematics with geometrical method and kinematic decoupling <a name="6"></a>
-To solve the inverse kinematics part, we do it geometrically, where it is necessary to know the distance between each joint as well as the inclination in degrees of the arm pitch. We used kinematic decoupoling, that is a calculation made by Pieper, in 1968 who achieved the the point of the gripper.
-
-We use Euler angles. We can get these angles with the elevation and turn of the gripper.With these options we get some complex equations which give more than one result (singular points).
-
-This will allow us to move the Matt-Omato robotic arm to any 3D coordinate that results in the computer vision part. The actuator located at the tip of the robotic arm allows us to correctly pick up the tomato without any damages.
-
-## Movement <a name="M"></a>
+## Drone Movement <a name="M"></a>
 <img src="https://user-images.githubusercontent.com/65310531/119307007-4def8f00-bc6b-11eb-8a46-fb86680cb764.png" align="right" width="250" alt="cloud"/>
 In order to be able to move Matt-Omato autonomously, he has been provided with two distance sensors capable of detecting any element in front of or behind him. 
 
@@ -118,18 +110,18 @@ In order to test Matt-Omato it has been necessary to use the CoppeliaSim softwar
 # Testing and results <a name="8"></a>
 To verify how good the proposed solution is, each of the created scenes has been run several times to check the accuracy of the XYZ coordinates of the tomatoes calculated by the computer vision algorithm and the coordinates of the tomatoes in CoppeliaSim. The results can be seen in the following table:
 
-| Escena | Tomates | Error Total X | Error Medio X | Error Total Y | Error Medio Y  | Error Total Z | Error Medio Z  | Distancia Euclidiana | Error Medio Total |
-|--------|---------|---------------|---------------|---------------|----------------|---------------|----------------|----------------------|-------------------|
-|      1 |       4 |       0,10431 |     0,0260775 |      -0,13623 |     -0,0340575 |        0,0633 |       0,015825 |              0,21308 |           0,05327 |
-|      2 |       8 |      0,330662 |    0,04133275 |      -0,42686 |     -0,0533575 |       0,07016 |        0,00877 |              0,54757 |        0,06844625 |
-|      3 |       7 |        0,2093 |        0,0299 |      -0,28257 |   -0,040367143 |      0,103086 |    0,014726571 |               0,3822 |            0,0546 |
-|      4 |       8 |        0,3357 |     0,0419625 |       -0,4614 |      -0,057675 |       0,10121 |     0,01265125 |              1,16614 |         0,1457675 |
-|      5 |      13 |    0,52457715 | 0,04035208846 |   -0,77592288 | -0,05968637539 |    0,05861645 | 0,004508957692 |            0,9649308 |      0,0742254435 |
-|      6 |      12 |    0,40989956 | 0,03415829667 |   -0,67678181 | -0,05639848417 |    0,03389403 |   0,0028245025 |            0,8138425 |     0,06782020461 |
-|      7 |       8 |    0,30705157 | 0,03838144625 |   -0,46826173 | -0,05853271625 |    0,04832574 |   0,0060407175 |         0,5731481238 |     0,07164351548 |
-|      8 |      26 |       0,92196 |       0,03546 |     -1,291836 |      -0,049686 |      0,091208 |       0,003508 |          1,589707329 |     0,06114258958 |
-|      9 |      36 |       1,32336 |       0,03676 |     -1,968696 |      -0,054686 |     0,0455445 |    0,001265125 |          2,372576644 |     0,06590490678 |
-|     10 |      16 |        0,5264 |        0,0329 |      -0,67744 |       -0,04234 |         0,152 |         0,0095 |         0,8712783215 |      0,0544548951 |
+| Escena | Cows | Pigs | Wet terrain |   Dry terrain | Error Medio Total |
+|--------|------|------|-------------|---------------|-------------------|
+|      1 |   4  |   4  |     0,10431 |     0,0260775 |           0,05327 |
+|      2 |   8  |   4  |    0,330662 |    0,04133275 |        0,06844625 |
+|      3 |   7  |   4  |      0,2093 |        0,0299 |            0,0546 |
+|      4 |   8  |   4  |      0,3357 |     0,0419625 |         0,1457675 |
+|      5 |   1  |   4  |  0,52457715 | 0,04035208846 |      0,0742254435 |
+|      6 |  12  |   4  |  0,40989956 | 0,03415829667 |     0,06782020461 |
+|      7 |   8  |   4  |  0,30705157 | 0,03838144625 |     0,07164351548 |
+|      8 |  26  |   4  |     0,92196 |       0,03546 |     0,06114258958 |
+|      9 |  36  |   4  |     1,32336 |       0,03676 |     0,06590490678 |
+|     10 |  16  |   4  |      0,5264 |        0,0329 |      0,0544548951 |
 
 # 3D Pieces <a name="9"></a>
 The following parts have been designed using TinkerCad software, the files can be found in the "Piezas 3D" folder.
