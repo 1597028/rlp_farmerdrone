@@ -141,7 +141,13 @@ Farmer Drone starts its movement in a straight line within the established limit
 
 
 # Simulation <a name="7"></a>
-In order to test Farmer Drone it has been necessary to use the CoppeliaSim software where we have the entire robot recreated in real size with all the hardware components and all the software components (Python). We have a total of 5 scenarios where different cases are tested to see the behavior of the drone in different situations.
+In order to test Farmer Drone it has been necessary to use the CoppeliaSim software where we have the entire robot recreated in real size with all the hardware components and all the software components (Python). We have a total of 6 scenarios where different cases are tested to see the behavior of the drone in different situations.
+<img src="resources/escena1.jpg"/>
+<img src="resources/escena2.jpg"/>
+<img src="resources/escena3.jpg"/>
+<img src="resources/escena4.jpg"/>
+<img src="resources/escena5.jpg"/>
+<img src="resources/escena6.jpg"/>
 
 <img width="1604" alt="" src="https://www.youtube.com/watch?v=qB0N4pwrjE8&ab_channel=DJIAgriculture">
 
