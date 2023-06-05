@@ -188,7 +188,7 @@ We think that our project is unique for several reasons, among them we have the 
 5. Reduced environmental impact: Drone designed to reduce environmental impact compared to other traditional monitoring and irrigation methods, which can be valuable to farmers and the environment.
 
 # Video <a name="11"></a>
-[![Vídeo Farmer Drone](drone.png)]([https://www.youtube.com/watch?v=YRAI7-MICbY&ab_channel=CoppeliaRobotics](https://youtu.be/mnik8UaRpnQ))
+[![Vídeo Farmer Drone](drone.png)](https://youtu.be/mnik8UaRpnQ)
 
 # Authors <a name="12"></a>
 - Víctor Hernández Garrido - 1597028 - <a href="https://github.com/1597028">Github</a>
