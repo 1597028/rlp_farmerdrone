@@ -67,7 +67,7 @@ In the diagram below you can see there are 4 main modules:
 
 ## Animal and Ground Status Detection <a name="5"></a>
 <img src="https://user-images.githubusercontent.com/65310531/119176651-a9532e80-ba6b-11eb-9cd7-0cd376f4e653.png" align="right" width="320" alt="cloud"/>
-To enhance the capabilities of the Farmer Drone, we have integrated an RGB-D camera that provides depth and color information, enabling advanced computer vision techniques. This integration allows us to create a detailed 3D point cloud of the scene, enhancing our ability to detect and analyze objects on the ground.
+To enhance the capabilities of the Farmer Drone, we have integrated an RGB-D camera that provides depth and color information, enabling advanced computer vision techniques. 
 By leveraging the power of computer vision algorithms and the RGB-D camera, the Farmer Drone is able to detect and monitor animals and other objects on the ground. This feature greatly enhances the overall monitoring and management of farmland, enabling farmers to gather real-time information and take appropriate actions as needed.
 
 The RGB-D camera captures both depth and color information, allowing for accurate detection and localization of objects within the scene. This information can be used to monitor the health and behavior of livestock, assess the quality of the terrain, and identify potential issues such as crop damage or pest infestations.
@@ -77,14 +77,14 @@ The integration of advanced computer vision techniques and the RGB-D camera repr
  ### Scene Background <a name="HSI"></a>
 In this stage of the project, the RGB values obtained by the camera are transformed into the HSI (Hue, Saturation, and Intensity) color space. The HSI color space is chosen for its similarity to human vision and ease of parameterization. By converting the RGB values to HSI, we can perform further analysis and processing on the scene.
 
-Once the point cloud is represented in the HSI color space, we define a threshold to filter and retain only the points of interest. This thresholding process allows us to focus on specific objects or features in the scene. In the context of the Farmer Drone project, this step helps us identify and analyze relevant information related to the ground and the environment.
+We define a threshold to filter and retain only the points of interest. This thresholding process allows us to focus on specific objects or features in the scene. In the context of the Farmer Drone project, this step helps us identify and analyze relevant information related to the ground and the environment.
 
 By leveraging the HSI color space and applying appropriate thresholds, we can extract valuable insights about the ground status, such as soil quality, vegetation health, and potential areas of concern. This information assists farmers in making informed decisions regarding irrigation, fertilization, and pest control, ultimately optimizing their farming practices and improving crop yield.
 
 The utilization of the HSI color space and thresholding techniques contributes to the overall effectiveness of the Farmer Drone project by providing valuable data and analysis that can enhance farm management and decision-making processes.
  
   ### Apply HSV Filter <a name="P"></a>
-In this stage, we apply an HSV (Hue, Saturation, Value) filter to the 3D point cloud data. The objective is to reduce the total number of points and focus on a specific range of colors that we are interested in. By defining a bounding box, we can limit the points to those that fall within this range.
+In this stage, we apply an HSV (Hue, Saturation, Value) filter. The objective is to reduce the total number of points and focus on a specific range of colors that we are interested in. By defining a bounding box, we can limit the points to those that fall within this range.
 
 The purpose of applying the HSV filter is to remove background points that may be detected by the camera, allowing us to isolate and keep only the points of interest. By doing so, we can optimize the execution time and improve the efficiency of the processing algorithm.
 
@@ -95,14 +95,14 @@ Overall, the application of the HSV filter enhances the accuracy and performance
   ### Binary Image <a name="CR"></a>
 To identify and separate different objects or groups of interest in the scene, we utilize a clustering algorithm. This algorithm allows us to group points based on their proximity and connectivity, forming distinct clusters. By specifying a minimum threshold for the number of points required to form a cluster, we can filter out noise and ensure that only significant groups are considered.
 
-The clustering algorithm plays a crucial role in the Farmer Drone project as it enables the detection of various objects or elements within the scene. By segmenting the point cloud data into separate clusters, we can identify individual entities or groups, such as livestock, vegetation, or other relevant features present in the farmland.
+The clustering algorithm plays a crucial role in the Farmer Drone project as it enables the detection of various objects or elements within the scene. We can identify individual entities or groups, such as livestock, vegetation, or other relevant features present in the farmland.
 
 The output of the clustering algorithm is a binary image, where each pixel corresponds to a specific object or cluster in the scene. This binary image serves as a valuable input for further processing and analysis, allowing us to perform more accurate identification, tracking, or monitoring of the detected elements.
 
 By applying the clustering algorithm and generating a binary image, the Farmer Drone system becomes capable of efficiently separating and categorizing different groups of points, enhancing its overall effectiveness in tasks such as terrain assessment, livestock monitoring, and overall farm management.
 
   ### Color filter <a name=""></a>
-In the Farmer Drone project, a color filter is applied to the 3D point cloud data to reduce the total number of points and focus on specific areas of interest. The purpose of this stage is to define a bounding box or range of colors that allows us to retain only the points falling within that range. By doing so, we can filter out background points detected by the camera and selectively keep the points corresponding to objects or elements of interest.
+In the Farmer Drone project, a color filter is applied to reduce the total number of points and focus on specific areas of interest. The purpose of this stage is to define a bounding box or range of colors that allows us to retain only the points falling within that range. By doing so, we can filter out background points detected by the camera and selectively keep the points corresponding to objects or elements of interest.
 
 By applying a color filter, we can effectively isolate and extract relevant information from the scene. This process helps optimize the execution time of subsequent algorithms and tasks by reducing the amount of data to be processed.
 
@@ -111,7 +111,6 @@ The color filter is a valuable step in the Farmer Drone project as it allows for
 Overall, the color filter stage enhances the capabilities of the Farmer Drone system in tasks such as object detection, environmental monitoring, and precision agriculture, contributing to improved farm management and productivity.
 
 ## Drone Movement <a name="M"></a>
-<img src="https://user-images.githubusercontent.com/65310531/119307007-4def8f00-bc6b-11eb-8a46-fb86680cb764.png" align="right" width="250" alt="cloud"/>
 
 Farmer Drone starts its movement in a straight line within the established limits of the farm and cannot deviate from them. The steps that Farmer Drone follows internally for the movement are the following:
 1. It travels distance on the X axis
@@ -130,13 +129,13 @@ Farmer Drone starts its movement in a straight line within the established limit
     - Send the coordinates of the drone where the animal was captured.
 
 
-# Simulation <a name="7"></a>
-In order to test Matt-Omato it has been necessary to use the CoppeliaSim software where we have the whole robot recreated in real size with all the hardware components and all the software components (Python). We have a total of 10 scenes where the difficulty increases according to the number of tomato plants, the number of tomatoes in each tomato plant, the size of the tomatoes and the color of the tomatoes.
+# simulation <a name="7"></a>
+In order to test Farmer Drone it has been necessary to use the CoppeliaSim software where we have the entire robot recreated in real size with all the hardware components and all the software components (Python). We have a total of 5 scenarios where different cases are tested to see the behavior of the drone in different situations.
 
 <img width="1604" alt="" src="https://www.youtube.com/watch?v=qB0N4pwrjE8&ab_channel=DJIAgriculture">
 
-# Testing and results <a name="8"></a>
-To verify how good the proposed solution is, each of the created scenes has been run several times to check the accuracy of the XYZ coordinates of the tomatoes calculated by the computer vision algorithm and the coordinates of the tomatoes in CoppeliaSim. The results can be seen in the following table:
+# Tests and results <a name="8"></a>
+To check how good the proposed solution is, each of the created scenes has been run several times to check the precision of the computer vision algorithm on the different scenarios and configurations. The results can be seen in the following table:
 
 | Escena | Cows | Pigs | Wet terrain |   Dry terrain | Error Medio Total |
 |--------|------|------|-------------|---------------|-------------------|
