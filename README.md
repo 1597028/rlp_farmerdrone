@@ -112,20 +112,22 @@ Overall, the color filter stage enhances the capabilities of the Farmer Drone sy
 
 ## Drone Movement <a name="M"></a>
 <img src="https://user-images.githubusercontent.com/65310531/119307007-4def8f00-bc6b-11eb-8a46-fb86680cb764.png" align="right" width="250" alt="cloud"/>
-In order to be able to move Matt-Omato autonomously, he has been provided with two distance sensors capable of detecting any element in front of or behind him. 
 
-Matt-Omato starts his movement in a straight line thanks to the rails and cannot deviate from them. The steps that Matt-Omato follows internally for the movement are as follows:
-1. Does the depth sensor detect any elements in front of it?
-2. If it detects any element
-   - Rotate camera joint to point to the other line of tomato plants
-3. If no element is detected
-   - Runs computer vision algorithm
-   - If detects a tomato
-      - Performs inverse kinematics
-      - Takes the tomato and place it in the box
-   - If does not detect tomato
-      - Moves in the indicated direction for one second
-      - Back to point 1
+Farmer Drone starts its movement in a straight line within the established limits of the farm and cannot deviate from them. The steps that Farmer Drone follows internally for the movement are the following:
+1. It travels distance on the X axis
+2. If the limit on the X of the farm is detected, the drone rotates.
+     - Once the rotation has been carried out, the drone advances to move on the Y axis the distance equivalent to the range that the camera can capture.
+3. Once it has finished moving on the Y axis, it makes the inverse path on the X axis to sweep the entire field.
+     - Runs computer vision algorithm
+     - If you detect a dry crop
+        - Send a notification indicating the status.
+        - Activate irrigation
+     - If it detects a wet crop
+        - Send a notification
+        - Disable irrigation.
+4. If you detect an animal outside your fence:
+    - Send a notification
+    - Send the coordinates of the drone where the animal was captured.
 
 
 # Simulation <a name="7"></a>
