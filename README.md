@@ -136,18 +136,14 @@ In order to test Farmer Drone it has been necessary to use the CoppeliaSim softw
 # Tests and results <a name="8"></a>
 To check how good the proposed solution is, each of the created scenes has been run several times to check the precision of the computer vision algorithm on the different scenarios and configurations. The results can be seen in the following table:
 
-| Escena | Cows | Pigs | Wet terrain |   Dry terrain | Error Medio Total |
-|--------|------|------|-------------|---------------|-------------------|
-|      1 |   4  |   4  |     0,10431 |     0,0260775 |           0,05327 |
-|      2 |   8  |   4  |    0,330662 |    0,04133275 |        0,06844625 |
-|      3 |   7  |   4  |      0,2093 |        0,0299 |            0,0546 |
-|      4 |   8  |   4  |      0,3357 |     0,0419625 |         0,1457675 |
-|      5 |   1  |   4  |  0,52457715 | 0,04035208846 |      0,0742254435 |
-|      6 |  12  |   4  |  0,40989956 | 0,03415829667 |     0,06782020461 |
-|      7 |   8  |   4  |  0,30705157 | 0,03838144625 |     0,07164351548 |
-|      8 |  26  |   4  |     0,92196 |       0,03546 |     0,06114258958 |
-|      9 |  36  |   4  |     1,32336 |       0,03676 |     0,06590490678 |
-|     10 |  16  |   4  |      0,5264 |        0,0329 |      0,0544548951 |
+| Scene | Cows total | Cows detected | Pigs total | Pigs detected | Wet terrain | Dry terrain | Terrain accuracy |
+|-------|------------|---------------|------------|---------------|-------------|-------------|------------------|
+|     1 |          2 |             2 |          2 |             1 |           5 |           3 |             100% |
+|     2 |          4 |             4 |          0 |             0 |           2 |           6 |             100% |
+|     3 |          1 |             1 |          1 |             0 |           4 |           4 |             100% |
+|     4 |          0 |             0 |          3 |             1 |           0 |           8 |             100% |
+|     5 |          2 |             1 |          2 |             2 |           0 |           8 |             100% |
+|     6 |          2 |             1 |          2 |             1 |           8 |           0 |             100% |
 
 # Created 3D Pieces <a name="9"></a>
 The following parts have been designed using TinkerCad software, the files can be found in the "models/drone_parts" folder.
