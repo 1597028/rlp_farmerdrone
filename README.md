@@ -52,7 +52,19 @@ In summary, the robotics project we are developing aims to improve the efficienc
 # Hardware Component List <a name="3"></a>
 This is the hardware scheme made for our drone. 
 </br>
-<img src="resources/hardware-farmerdrone.png" width="500" alt="Hardware table"/>
+| Component                   | Units | Price/Unit | Budget |
+|-----------------------------|-------|------------|--------|
+| Motor DC 12V 100RPM         | 4     | 2,64       | 10,56  |
+| Batería LiPo 5000mAh        | 2     | 11,90      | 23,80  |
+| Cámara autofocus 12MP       | 1     | 35,29      | 35,29  |
+| Cámara térmica AMG8833      | 1     | 65,98      | 65,98  |
+| SparkFun 9DoF IMU Breakout  | 1     | 6,25       | 6,25   |
+| Placa controladora de vuelo | 1     | -          | -      |
+| Receptor RF 434Mhz          | 1     | 36,32      | 36,32  |
+| Emisor RF 434Mhz            | 1     | 35,32      | 36,32  |
+| ESP32 STEAMakers            | 1     | 30,95      | 30,95  |
+| **Total**                   |       |            | 245,47 |
+</br>
 
 # Software Architecture <a name="4"></a>
 In order to develop the software part of Farmer Drone, we have divided the development into two parts. 
