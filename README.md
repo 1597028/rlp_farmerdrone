@@ -65,7 +65,7 @@ In the diagram below you can see there are 4 main modules:
 <img src="resources/software-farmerdrone.png" width="600" alt="software_scheme"/>
 
 ## Animal and Ground Status Detection <a name="5"></a>
-<img src="resources/filtros.JPG" align="right" width="320" alt="cloud"/>
+<img src="resources/filtros.png" align="right" width="320" alt="cloud"/>
 To enhance the capabilities of the Farmer Drone, we have integrated an RGB-D camera that provides depth and color information, enabling advanced computer vision techniques. 
 By leveraging the power of computer vision algorithms and the RGB-D camera, the Farmer Drone is able to detect and monitor animals and other objects on the ground. This feature greatly enhances the overall monitoring and management of farmland, enabling farmers to gather real-time information and take appropriate actions as needed.
 
