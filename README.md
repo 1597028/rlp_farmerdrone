@@ -142,14 +142,12 @@ Farmer Drone starts its movement in a straight line within the established limit
 
 # Simulation <a name="7"></a>
 In order to test Farmer Drone it has been necessary to use the CoppeliaSim software where we have the entire robot recreated in real size with all the hardware components and all the software components (Python). We have a total of 6 scenarios where different cases are tested to see the behavior of the drone in different situations.
-<img src="resources/scene1.jpg"/>
-<img src="resources/scene2.jpg"/>
-<img src="resources/scene3.jpg"/>
-<img src="resources/scene4.jpg"/>
-<img src="resources/scene5.jpg"/>
-<img src="resources/scene.jpg"/>
-
-<img width="1604" alt="" src="https://www.youtube.com/watch?v=qB0N4pwrjE8&ab_channel=DJIAgriculture">
+<img src="resources/scene1.jpg" width="500px"/>
+<img src="resources/scene2.jpg width="500px""/>
+<img src="resources/scene3.jpg width="500px""/>
+<img src="resources/scene4.jpg width="500px""/>
+<img src="resources/scene5.jpg width="500px""/>
+<img src="resources/scene.jpg" width="500px"/>
 
 # Tests and results <a name="8"></a>
 To check how good the proposed solution is, each of the created scenes has been run several times to check the precision of the computer vision algorithm on the different scenarios and configurations. The results can be seen in the following table:
