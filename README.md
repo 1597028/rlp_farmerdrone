@@ -84,14 +84,31 @@ By leveraging the HSI color space and applying appropriate thresholds, we can ex
 The utilization of the HSI color space and thresholding techniques contributes to the overall effectiveness of the Farmer Drone project by providing valuable data and analysis that can enhance farm management and decision-making processes.
  
   ### Apply HSV Filter <a name="P"></a>
-At this stage the total number of points within the 3D cloud is reduced. The idea is to define a bounding box that limits us to a range in which to keep only those points that fall inside. In this way we will only keep the tomatoes that are close to the camera and remove those background points that the camera can detect. This will make the execution time very small.
+In this stage, we apply an HSV (Hue, Saturation, Value) filter to the 3D point cloud data. The objective is to reduce the total number of points and focus on a specific range of colors that we are interested in. By defining a bounding box, we can limit the points to those that fall within this range.
+
+The purpose of applying the HSV filter is to remove background points that may be detected by the camera, allowing us to isolate and keep only the points of interest. By doing so, we can optimize the execution time and improve the efficiency of the processing algorithm.
+
+This filtering step is crucial in the Farmer Drone project as it helps in identifying and retaining important elements within the scene, such as objects on the ground or specific features related to the environment. By focusing on a particular color range, we can extract meaningful information that assists in analyzing the terrain, monitoring livestock, or detecting potential areas of concern.
+
+Overall, the application of the HSV filter enhances the accuracy and performance of the Farmer Drone system, ensuring that only relevant points are considered for further analysis and decision-making processes.
   
   ### Binary Image <a name="CR"></a>
-  
-In order to detect all tomatoes in the scene individually, it is necessary to develop an algorithm capable of separating all the groups of points. That is why we have used a clustering algorithm which allows us to group the points by groups establishing the minimum amount of points that we want to have to form one. In this way we also avoid possible noise that may have crept in from the previous stages.
+To identify and separate different objects or groups of interest in the scene, we utilize a clustering algorithm. This algorithm allows us to group points based on their proximity and connectivity, forming distinct clusters. By specifying a minimum threshold for the number of points required to form a cluster, we can filter out noise and ensure that only significant groups are considered.
+
+The clustering algorithm plays a crucial role in the Farmer Drone project as it enables the detection of various objects or elements within the scene. By segmenting the point cloud data into separate clusters, we can identify individual entities or groups, such as livestock, vegetation, or other relevant features present in the farmland.
+
+The output of the clustering algorithm is a binary image, where each pixel corresponds to a specific object or cluster in the scene. This binary image serves as a valuable input for further processing and analysis, allowing us to perform more accurate identification, tracking, or monitoring of the detected elements.
+
+By applying the clustering algorithm and generating a binary image, the Farmer Drone system becomes capable of efficiently separating and categorizing different groups of points, enhancing its overall effectiveness in tasks such as terrain assessment, livestock monitoring, and overall farm management.
 
   ### Color filter <a name=""></a>
-At this stage the total number of points within the 3D cloud is reduced. The idea is to define a bounding box that limits us to a range in which to keep only those points that fall inside. In this way we will only keep the tomatoes that are close to the camera and remove those background points that the camera can detect. This will make the execution time very small.
+In the Farmer Drone project, a color filter is applied to the 3D point cloud data to reduce the total number of points and focus on specific areas of interest. The purpose of this stage is to define a bounding box or range of colors that allows us to retain only the points falling within that range. By doing so, we can filter out background points detected by the camera and selectively keep the points corresponding to objects or elements of interest.
+
+By applying a color filter, we can effectively isolate and extract relevant information from the scene. This process helps optimize the execution time of subsequent algorithms and tasks by reducing the amount of data to be processed.
+
+The color filter is a valuable step in the Farmer Drone project as it allows for efficient targeting and analysis of specific objects or areas in the farmland. By eliminating unnecessary points outside the defined range, the drone's computational resources can be utilized more efficiently, leading to faster and more accurate data processing.
+
+Overall, the color filter stage enhances the capabilities of the Farmer Drone system in tasks such as object detection, environmental monitoring, and precision agriculture, contributing to improved farm management and productivity.
 
 ## Drone Movement <a name="M"></a>
 <img src="https://user-images.githubusercontent.com/65310531/119307007-4def8f00-bc6b-11eb-8a46-fb86680cb764.png" align="right" width="250" alt="cloud"/>
