@@ -166,6 +166,8 @@ To check how good the proposed solution is, each of the created scenes has been 
 |     5 |          2 |             1 |          2 |             2 |                       75% |
 |     6 |          2 |             1 |          2 |             1 |                       50% |
 
+The main reason why our computer vision detection algorithm sometimes fails is because the drone's movement is sequential and sometimes it takes pictures of the animals halfway, so they cannot be fully recognized.
+
 # Created 3D Pieces <a name="9"></a>
 The following parts have been designed using TinkerCad software, the files can be found in the "models/drone_parts" folder.
 | Body | Propellers | Motor |
