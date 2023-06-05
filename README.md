@@ -66,14 +66,22 @@ In the diagram below you can see there are 4 main modules:
 <img src="resources/software-farmerdrone.png" width="600" alt="software_scheme"/>
 
 ## Animal and Ground Status Detection <a name="5"></a>
- <img src="https://user-images.githubusercontent.com/65310531/119176651-a9532e80-ba6b-11eb-9cd7-0cd376f4e653.png" align="right" width="320" alt="cloud"/>
- In order to provide Matt-Omato with computer vision, it has been necessary to integrate an RGB-D camera that provides depth and color information. Thanks to this we are able to create the 3D point cloud of the scene.
- 
-In order to obtain the coordinates of the tomatoes at the end of the computer vision algorithm, the following steps have been followed to facilitate our work on the 3D point cloud and tomato detection.
- 
- ### Scene background <a name="HSI"></a>
-  
-At this stage we pass the RGB values obtained by the camera to the HSI color space which is more similar to human vision and easier to parameterize. Once we have the point cloud in this color space, we have defined a threshold which will allow us to keep only those points we are interested in. In this case with tomato colors such as medium ripe green, orange about to ripen and deep red representing a ripe tomato. These are the colors that we accept that Matt-Omato harvests.
+<img src="https://user-images.githubusercontent.com/65310531/119176651-a9532e80-ba6b-11eb-9cd7-0cd376f4e653.png" align="right" width="320" alt="cloud"/>
+To enhance the capabilities of the Farmer Drone, we have integrated an RGB-D camera that provides depth and color information, enabling advanced computer vision techniques. This integration allows us to create a detailed 3D point cloud of the scene, enhancing our ability to detect and analyze objects on the ground.
+By leveraging the power of computer vision algorithms and the RGB-D camera, the Farmer Drone is able to detect and monitor animals and other objects on the ground. This feature greatly enhances the overall monitoring and management of farmland, enabling farmers to gather real-time information and take appropriate actions as needed.
+
+The RGB-D camera captures both depth and color information, allowing for accurate detection and localization of objects within the scene. This information can be used to monitor the health and behavior of livestock, assess the quality of the terrain, and identify potential issues such as crop damage or pest infestations.
+
+The integration of advanced computer vision techniques and the RGB-D camera represents a significant advancement in precision agriculture. It empowers farmers with valuable insights and actionable data, enabling them to optimize their operations, make informed decisions, and ultimately enhance the productivity and sustainability of their farming practices.
+
+ ### Scene Background <a name="HSI"></a>
+In this stage of the project, the RGB values obtained by the camera are transformed into the HSI (Hue, Saturation, and Intensity) color space. The HSI color space is chosen for its similarity to human vision and ease of parameterization. By converting the RGB values to HSI, we can perform further analysis and processing on the scene.
+
+Once the point cloud is represented in the HSI color space, we define a threshold to filter and retain only the points of interest. This thresholding process allows us to focus on specific objects or features in the scene. In the context of the Farmer Drone project, this step helps us identify and analyze relevant information related to the ground and the environment.
+
+By leveraging the HSI color space and applying appropriate thresholds, we can extract valuable insights about the ground status, such as soil quality, vegetation health, and potential areas of concern. This information assists farmers in making informed decisions regarding irrigation, fertilization, and pest control, ultimately optimizing their farming practices and improving crop yield.
+
+The utilization of the HSI color space and thresholding techniques contributes to the overall effectiveness of the Farmer Drone project by providing valuable data and analysis that can enhance farm management and decision-making processes.
  
   ### Apply HSV Filter <a name="P"></a>
 At this stage the total number of points within the 3D cloud is reduced. The idea is to define a bounding box that limits us to a range in which to keep only those points that fall inside. In this way we will only keep the tomatoes that are close to the camera and remove those background points that the camera can detect. This will make the execution time very small.
