@@ -7,14 +7,13 @@ Drone capable of flying over crop fields to control livestock, observe the quali
 * [What is this?](#1)
    * [Requeriments](#R)
    * [Description](#2)
-   * [Hardware Scheme](#3)
+   * [Hardware Components List](#3)
    * [Software Architecture](#4)
-      * [3D Point Cloud tomato detection](#5)
-        * [HSI Threshold Color](#HSI)
-        * [PassThrough Filter](#P)
-        * [Clustering and RANSAC](#CR)
-      * [Inverse kinematics algorithm](#6)
-      * [Movement](#M)
+      * [Animal and Ground Status Detection](#5)
+        * [Scene background](#SB)
+        * [Apply HSV Filter](#HSV)
+        * [Binary Image](#BI)
+      * [Drone Movement](#DM)
    * [Simulation](#7)
    * [Testing and results](#8)
    * [3D Pieces](#9)
@@ -56,7 +55,7 @@ This is the hardware scheme made for our drone.
 <img src="resources/hardware-farmerdrone.png" width="500" alt="Hardware table"/>
 
 # Software Architecture <a name="4"></a>
-In order to develop the software part of Matt-Omato, we have divided the development into two parts. 
+In order to develop the software part of Farmer Drone, we have divided the development into two parts. 
 
 In the diagram below you can see there are 4 main modules:
 - Irrigation Module: Using the information received from the module that processes the information on the state of the land, it will decide whether to activate the irrigation, in case the land is not wet enough, or deactivate them in the event that the land is receiving too much water. The order will be sent to the risks by means of a signal (a priori by radio).
@@ -74,7 +73,7 @@ The RGB-D camera captures both depth and color information, allowing for accurat
 
 The integration of advanced computer vision techniques and the RGB-D camera represents a significant advancement in precision agriculture. It empowers farmers with valuable insights and actionable data, enabling them to optimize their operations, make informed decisions, and ultimately enhance the productivity and sustainability of their farming practices.
 
- ### Scene Background <a name="HSI"></a>
+ ### Scene Background <a name="SB"></a>
 In this stage of the project, the RGB values obtained by the camera are transformed into the HSI (Hue, Saturation, and Intensity) color space. The HSI color space is chosen for its similarity to human vision and ease of parameterization. By converting the RGB values to HSI, we can perform further analysis and processing on the scene.
 
 We define a threshold to filter and retain only the points of interest. This thresholding process allows us to focus on specific objects or features in the scene. In the context of the Farmer Drone project, this step helps us identify and analyze relevant information related to the ground and the environment.
@@ -83,7 +82,7 @@ By leveraging the HSI color space and applying appropriate thresholds, we can ex
 
 The utilization of the HSI color space and thresholding techniques contributes to the overall effectiveness of the Farmer Drone project by providing valuable data and analysis that can enhance farm management and decision-making processes.
  
-  ### Apply HSV Filter <a name="P"></a>
+  ### Apply HSV Filter <a name="HSV"></a>
 In this stage, we apply an HSV (Hue, Saturation, Value) filter. The objective is to reduce the total number of points and focus on a specific range of colors that we are interested in. By defining a bounding box, we can limit the points to those that fall within this range.
 
 The purpose of applying the HSV filter is to remove background points that may be detected by the camera, allowing us to isolate and keep only the points of interest. By doing so, we can optimize the execution time and improve the efficiency of the processing algorithm.
@@ -92,7 +91,7 @@ This filtering step is crucial in the Farmer Drone project as it helps in identi
 
 Overall, the application of the HSV filter enhances the accuracy and performance of the Farmer Drone system, ensuring that only relevant points are considered for further analysis and decision-making processes.
   
-  ### Binary Image <a name="CR"></a>
+  ### Binary Image <a name="BI"></a>
 To identify and separate different objects or groups of interest in the scene, we utilize a clustering algorithm. This algorithm allows us to group points based on their proximity and connectivity, forming distinct clusters. By specifying a minimum threshold for the number of points required to form a cluster, we can filter out noise and ensure that only significant groups are considered.
 
 The clustering algorithm plays a crucial role in the Farmer Drone project as it enables the detection of various objects or elements within the scene. We can identify individual entities or groups, such as livestock, vegetation, or other relevant features present in the farmland.
@@ -110,7 +109,7 @@ The color filter is a valuable step in the Farmer Drone project as it allows for
 
 Overall, the color filter stage enhances the capabilities of the Farmer Drone system in tasks such as object detection, environmental monitoring, and precision agriculture, contributing to improved farm management and productivity.
 
-## Drone Movement <a name="M"></a>
+## Drone Movement <a name="DM"></a>
 
 Farmer Drone starts its movement in a straight line within the established limits of the farm and cannot deviate from them. The steps that Farmer Drone follows internally for the movement are the following:
 1. It travels distance on the X axis
